@@ -11,7 +11,8 @@ import SwiftUI
 struct QRCodableApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: .init())
         }
+        .windowResizability(.contentSize)
     }
 }
